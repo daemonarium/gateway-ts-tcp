@@ -1,0 +1,5 @@
+gateway-ts-tcp
+Copyright (c) 2026 Magowie Sp. z o.o.
+
+This package depends on @daemonarium/gateway.
+TCP uses Node's built-in node:net module.

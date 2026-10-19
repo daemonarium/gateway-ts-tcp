@@ -1,0 +1,32 @@
+{
+  "name": "@daemonarium/gateway-tcp",
+  "version": "0.1.0",
+  "description": "TCP transport for @daemonarium/gateway, Node only, no kernel",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "author": "Magowie Sp. z o.o.",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsx node_modules/.bin/mocha --timeout 15000 'tests/**/*.test.ts' --exit"
+  },
+  "peerDependencies": {
+    "@daemonarium/gateway": "^0.1.0"
+  },
+  "devDependencies": {
+    "@daemonarium/gateway": "0.1.0",
+    "@daemonarium/rpc": "0.1.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^22.18.11",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "tsx": "^4.7.0",
+    "typescript": "~5.9.0"
+  }
+}
